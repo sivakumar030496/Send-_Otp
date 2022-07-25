@@ -20,4 +20,4 @@ def send_otp(request):
 def home(request):
     return render(request, "home.html")
 
-# siva
+#haritha
