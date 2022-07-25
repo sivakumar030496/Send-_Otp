@@ -13,8 +13,11 @@ def send_otp(request):
     email=request.GET.get("email")
     o=generateOTP()
     htmlgen = '<p>Your OTP is <strong>'+o+'</strong></p>'
-    send_mail('OTP request',o,'<gmail id>',[email],fail_silently=False,html_message=htmlgen)
+    # send_mail('OTP request',o,'<sivapapaiahgari77@gmail.com>',[email],fail_silently=False,html_message=htmlgen)
+    print(o)
     return HttpResponse(o)
 
 def home(request):
     return render(request, "home.html")
+
+# siva
